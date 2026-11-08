@@ -1,0 +1,157 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 100;
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    overflow-y: auto;
+}
+.main-container {
+    margin-left: 270px;
+    margin-top: 70px;
+    padding: 14px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 70px);
+    background-color: whitesmoke;
+}
+.main-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 4px;
+    min-height: 490px;
+    box-sizing: border-box;
+    margin-top:30px;
+}
+
+.main-content h2 {
+    margin: 0 0 1px;
+    font-size: 8px;
+    font-weight: 600;
+
+}
+
+.heading {
+
+    font-size: 22px;
+    font-weight: 600;
+    background-color: whitesmoke;
+    text-align: left;
+
+}
+.row-1,
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 28px;
+  margin-left:15px;
+}
+.row-3 {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  margin-left:15px;
+  padding-bottom: 20px;
+  
+  
+
+}
+.field{
+    display:flex;
+    flex-direction:column;
+}
+.field label{
+    font-size:14px;
+    color:smokegrey;
+    margin-bottom:4px;
+    text-align:left;
+}
+.field input{
+    border:none;
+    border-bottom:1px solid #ccc;
+    font-size:13px;
+    
+
+}
+.field input:focus {
+  border-bottom-color: #007bff;
+  outline: none;
+}
+.input-with-suffix{
+
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+.toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+  font-size: 14px;
+}
+.form-actions{
+    display:flex;
+
+    flex-direction:row;
+    justify-content: right;
+    gap: 5px;
+    margin-top:40px;
+    height: 48px;
+    width:265px;
+}
+.form-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;  
+  gap: 5px;
+  margin-top: 40px;
+  width: 100%;                
+  height: 48px;
+}
+   
+.btn-cancel{
+    background-color:aliceblue;
+    cursor:pointer;
+    
+    border-radius:4px;
+    color:black;
+    height:48px;
+    width:95px;
+    border: 1px #CCCCCC;
+
+}
+.btn-primary{
+    height:48px;
+    width:155px;
+    cursor:pointer;
+    color:white;
+    background-color:#147CEB;
+     border-radius:4px;
+}
+
+h1 , h3{
+    font-size:18px;
+    font-weight:600;
+    color:rgb(60, 45, 48);
+    text-align: left;
+}
+
+.btn-primary:hover {
+    background: #0f63c4;
+}
+
+@media (max-width: 768px) {
+    .form-grid.three {
+        grid-template-columns: 1fr;
+    }
+}
